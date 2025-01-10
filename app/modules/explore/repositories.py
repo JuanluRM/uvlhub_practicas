@@ -14,7 +14,7 @@ class ExploreRepository(BaseRepository):
         # Normalize and remove unwanted characters
         normalized_query = unidecode.unidecode(query).lower()
         cleaned_query = re.sub(r'[,.":\'()\[\]^;!¡¿?]', "", normalized_query)
-
+        # coment coment
         filters = []
         for word in cleaned_query.split():
             filters.append(DSMetaData.title.ilike(f"%{word}%"))

@@ -4,7 +4,7 @@ from app.modules.featuremodel.models import FMMetaData, FeatureModel
 from core.repositories.BaseRepository import BaseRepository
 
 
-class FeatureModelRepository(BaseRepository):
+class FeatureModelRepository(BaseRepository): ##coment coment
     def __init__(self):
         super().__init__(FeatureModel)
 
